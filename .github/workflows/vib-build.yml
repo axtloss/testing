@@ -17,6 +17,8 @@ env:
 jobs:
   verify_image:
     runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/vanilla-os/core:main
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
